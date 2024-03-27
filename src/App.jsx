@@ -1,7 +1,12 @@
-import { useState } from 'react';
-import logo from './logo.svg'
+// import { useState } from 'react';
+// import logo from './logo.svg'
 import './App.css';
+import Nav from './Nav';
+import Home from './Home';
 import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
@@ -21,21 +26,17 @@ function App() {
 
   return (
     <div className="App">
-      {/* <main>
-        <img src={logo} className="App-logo" alt="Rithm" />
-        <h1>Rithm React Starter</h1>
-        <p>
-          <button
-              className="btn btn-primary"
-              onClick={incrCount}>
-            Clicked: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>src/App.jsx</code>
-        </p>
-      </main> */}
-      <About />
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/about" element={<About/>}></Route>
+          <Route path="/projects" element={<Projects/>}></Route>
+          <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="*" element={<Home/>}></Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <Home /> */}
     </div>
   );
 };
