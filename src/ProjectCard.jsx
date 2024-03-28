@@ -1,14 +1,17 @@
 /**Individual project card.  */
 
 function ProjectCard({title, description, demo, github, img}){
+    let cardStyle = {width: "25rem"};
     return(
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src={img} alt="Card image cap"></img>
-            <div class="card-body">
-                <h5 class="card-title">{title}</h5>
-                <p class="card-text">{description}</p>
-                <a href={github} class="btn btn-light">View on Github</a>
-                <a href={demo} class="btn btn-dark">Live Demo</a>
+        <div className="card" style={cardStyle}>
+            <img className="card-img-top" src={img} alt="project image"></img>
+            <div className="card-body">
+                <h5 className="card-title">{title}</h5>
+                <p className="card-text">{description}</p>
+                <div className="card-footer">
+                    <a href={github} className="btn btn-light">View on Github</a>
+                    <a href={demo} className="btn btn-dark">Live Demo</a>
+                </div>
             </div>
         </div>
     )
