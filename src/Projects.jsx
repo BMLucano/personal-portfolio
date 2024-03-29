@@ -4,6 +4,7 @@ let projectsInfo = [
     {
         title: "Jobly",
         description: "A full-stack app for finding companies and jobs.",
+        tech:" React - Node.js - Express - PostgreSQL - JWT",
         github: "https://github.com/BMLucano/react-jobly",
         demo: "https://react-jobly-bl.surge.sh/",
         img:"src/images/jobly-gif.gif",
@@ -11,16 +12,18 @@ let projectsInfo = [
     {
         title: "Share BnB",
         description: "A an app for exploring outdoor places to rent.",
+        tech:"Flask - jQuery - PostgreSQL - AWS - Bootsrap",
         github: "https://github.com/BMLucano/sharebnb",
         demo: "https://bml-sharebnb.onrender.com/",
         img:"src/images/sharebnb.gif",
     },
     {
         title: "Warbler",
-        description: "A twitter clone.",
+        description: "An app similar to twitter...but warbler.",
+        tech:"Flask - Jinja - PostgreSQL - Bootstrap - unittest",
         github: "https://github.com/BMLucano/flask-warbler",
         demo: "https://brandie-lucano-warbler.onrender.com/",
-        img:"",
+        img:"src/images/warbler.gif",
     }
 
 ]
@@ -31,7 +34,7 @@ function Projects(){
         <div>
             <h3>Featured Work</h3>
             <div className="card-group">
-            {projectsInfo.map(p => <ProjectCard key={p.title} title={p.title} description={p.description} github={p.github} demo={p.demo} img={p.img}/>)}
+            {projectsInfo.map(p => <ProjectCard key={p.title} title={p.title} description={p.description} tech={p.tech} github={p.github} demo={p.demo} img={p.img}/>)}
             </div>
         </div>
     )
