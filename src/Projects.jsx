@@ -11,8 +11,8 @@ let projectsInfo = [
     },
     {
         title: "Share BnB",
-        description: "A an app for exploring outdoor places to rent.",
-        tech:"Flask - jQuery - PostgreSQL - AWS - Bootsrap",
+        description: "An app for exploring outdoor places to rent.",
+        tech:"Flask - jQuery - PostgreSQL - AWS - Bootstrap",
         github: "https://github.com/BMLucano/sharebnb",
         demo: "https://bml-sharebnb.onrender.com/",
         img:"src/images/sharebnb.gif",
@@ -32,7 +32,7 @@ function Projects(){
 
     return(
         <div>
-            <h3>Featured Work</h3>
+            <h3 className="text-success mt-2 mb-2">Featured Work</h3>
             <div className="card-group">
             {projectsInfo.map(p => <ProjectCard key={p.title} title={p.title} description={p.description} tech={p.tech} github={p.github} demo={p.demo} img={p.img}/>)}
             </div>
