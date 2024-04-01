@@ -31,12 +31,32 @@ let projectsInfo = [
 function Projects(){
 
     return(
-        <div>
-            <h3 className="text-success mt-2 mb-2">Featured Work</h3>
-            <div className="card-group">
-            {projectsInfo.map(p => <ProjectCard key={p.title} title={p.title} description={p.description} tech={p.tech} github={p.github} demo={p.demo} img={p.img}/>)}
+        <div className="container">
+            <h3 className="text-success mt-2 mb-3">Featured Work</h3>
+            <div className="row">
+                {projectsInfo.map(p => (
+                    <div className="col-md-4 mb-3" key={p.title}>
+                        <ProjectCard
+                            title={p.title}
+                            description={p.description}
+                            tech={p.tech}
+                            github={p.github}
+                            demo={p.demo}
+                            img={p.img}
+                        />
+                    </div>
+                ))}
             </div>
         </div>
-    )
+    );
+
+    // return(
+    //     <div className="container-fluid">
+    //         <h3 className="text-success mt-2 mb-2">Featured Work</h3>
+    //         <div className="card-group">
+    //         {projectsInfo.map(p => <ProjectCard key={p.title} title={p.title} description={p.description} tech={p.tech} github={p.github} demo={p.demo} img={p.img}/>)}
+    //         </div>
+    //     </div>
+    // )
 }
 export default Projects;
