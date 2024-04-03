@@ -1,0 +1,35 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.toolbox-section {
+  background-color: #6c757d;
+  border: 1px solid #343a40;
+  padding: 15px;
+}
+
+.toolbox-section h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.toolbox-section .d-flex {
+  margin-top: -10px;
+}
+
+.toolbox-section .icon {
+  height: auto;
+  width: auto;
+  max-height: 3rem;
+  max-width: 3rem;
+  margin:5px;
+}
+
+@media (max-width: 768px) {
+  .toolbox-section .icon {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+  }
+}

@@ -10,7 +10,7 @@ function ProjectCard({title, description, tech, demo, github, img}){
             <img className="card-img-top aspect-ratio-item" src={img} alt="project image" />
             <div className="card-body">
                 <p className="card-text">{description}</p>
-                <small className="card-text text-success"><i>{tech}</i></small>
+                <small className="card-text text-success"><b><i>{tech}</i></b></small>
                 <div className="card-footer">
                     <a href={github} className="btn btn-light">View on Github</a>
                     <a href={demo} className="btn btn-dark">Live Demo</a>

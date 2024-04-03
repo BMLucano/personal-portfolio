@@ -37,7 +37,7 @@ function Home(){
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h1 className="text-light">Hi, I'm Brandie Lucano.</h1>
+                    <h1 className="text-light"><a href="/">Hi, I'm Brandie Lucano.</a></h1>
                     <h3 className="text-secondary">Software Engineer and Educator</h3>
 
                     <div className="mt-3">
