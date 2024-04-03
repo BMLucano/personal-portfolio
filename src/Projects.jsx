@@ -18,6 +18,10 @@ import React from "./images/icons/React.svg"
 import SQLAlchemy from "./images/icons/SQLAlchemy.svg"
 import TypeScript from "./images/icons/TypeScript.svg"
 import VSCode from "./images/icons/VSCode.svg"
+import JoblyGif from "./images/jobly-gif.gif"
+import ShareBnBGif from "./images/sharebnb.gif"
+import WarblerGif from "./images/warbler.gif"
+
 
 /** Project page for site. */
 let projectsInfo = [
@@ -27,7 +31,7 @@ let projectsInfo = [
         tech:" React - Node.js - Express - PostgreSQL - JWT",
         github: "https://github.com/BMLucano/react-jobly",
         demo: "https://react-jobly-bl.surge.sh/",
-        img:"src/images/jobly-gif.gif",
+        img:{JoblyGif},
     },
     {
         title: "Share BnB",
@@ -35,7 +39,7 @@ let projectsInfo = [
         tech:"Flask - jQuery - PostgreSQL - AWS - Bootstrap",
         github: "https://github.com/BMLucano/sharebnb",
         demo: "https://bml-sharebnb.onrender.com/",
-        img:"src/images/sharebnb.gif",
+        img:{ShareBnBGif},
     },
     {
         title: "Warbler",
@@ -43,7 +47,7 @@ let projectsInfo = [
         tech:"Flask - Jinja - PostgreSQL - Bootstrap - unittest",
         github: "https://github.com/BMLucano/flask-warbler",
         demo: "https://brandie-lucano-warbler.onrender.com/",
-        img:"src/images/warbler.gif",
+        img:{WarblerGif},
     }
 
 ]
