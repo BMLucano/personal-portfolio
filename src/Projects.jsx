@@ -31,7 +31,7 @@ let projectsInfo = [
         tech:" React - Node.js - Express - PostgreSQL - JWT",
         github: "https://github.com/BMLucano/react-jobly",
         demo: "https://react-jobly-bl.surge.sh/",
-        img:{JoblyGif},
+        img: JoblyGif,
     },
     {
         title: "Share BnB",
@@ -39,7 +39,7 @@ let projectsInfo = [
         tech:"Flask - jQuery - PostgreSQL - AWS - Bootstrap",
         github: "https://github.com/BMLucano/sharebnb",
         demo: "https://bml-sharebnb.onrender.com/",
-        img:{ShareBnBGif},
+        img:ShareBnBGif,
     },
     {
         title: "Warbler",
@@ -47,7 +47,7 @@ let projectsInfo = [
         tech:"Flask - Jinja - PostgreSQL - Bootstrap - unittest",
         github: "https://github.com/BMLucano/flask-warbler",
         demo: "https://brandie-lucano-warbler.onrender.com/",
-        img:{WarblerGif},
+        img:WarblerGif,
     }
 
 ]
