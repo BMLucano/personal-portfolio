@@ -2,7 +2,6 @@ import { useState } from "react";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import "./Home.css"
 
 
 /** Homepage for site. */
