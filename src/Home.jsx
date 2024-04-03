@@ -1,9 +1,7 @@
 import { useState } from "react";
-// import Nav from "./Nav";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-// import portrait from "./images/portrait.jpeg"
 import "./Home.css"
 
 
@@ -34,27 +32,28 @@ function Home(){
 
 
         return(
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <h1 className="text-light"><a href="/">Hi, I'm Brandie Lucano.</a></h1>
-                    <h3 className="text-secondary">Software Engineer and Educator</h3>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <h1 className="text-light"><a href="/">Hi, I'm Brandie Lucano.</a></h1>
+                        <h3 className="text-secondary">Software Engineer and Educator</h3>
 
-                    <div className="mt-3">
-                        <button onClick={handleAbout} className="btn btn-primary btn-outline-warning mr-1">About Me</button>
-                        <button onClick={handleProjects} className="btn btn-primary btn-outline-success mr-1">Projects</button>
-                        <button onClick={handleContact} className="btn btn-primary btn-outline-info mr-1">Contact</button>
+                        <div className="mt-3">
+                            <button onClick={handleAbout} className="btn btn-primary btn-outline-warning mr-1">About Me</button>
+                            <button onClick={handleProjects} className="btn btn-primary btn-outline-success mr-1">Projects</button>
+                            <button onClick={handleContact} className="btn btn-primary btn-outline-info mr-1">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="row mt-4">
+                    <div className="col">
+                        {showAbout && <About/>}
+                        {showProjects && <Projects/>}
+                        {showContact && <Contact />}
                     </div>
                 </div>
             </div>
-            <div className="row mt-4">
-                <div className="col">
-                    {showAbout && <About/>}
-                    {showProjects && <Projects/>}
-                    {showContact && <Contact />}
-                </div>
-            </div>
-        </div>
+
     )
 }
 

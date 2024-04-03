@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import "./Projects.css"
+
 /** Project page for site. */
 let projectsInfo = [
     {
@@ -28,54 +29,6 @@ let projectsInfo = [
     }
 
 ]
-
-// function Projects(){
-
-//     return(
-//         <div className="container">
-//             <div className="row">
-//                 <div className="card">
-//                     <div className="card-body bg-secondary d-flex flex-wrap align-items-center">
-//                             <h1 className="col-3 text-left">My toolbox:</h1>
-//                             <img className="icon col-1" src="src/images/icons/Bootstrap.svg" alt="Bootstrap icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/CSS3.svg" alt="CSS icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Django.svg" alt="Django icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Express.svg" alt="Express icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Flask.svg" alt="Flask icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Git.svg" alt="Git icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/GitHub.svg" alt="GitHub icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/HTML5.svg" alt="HTML icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Insomnia.svg" alt="Insomnia icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/JavaScript.svg" alt="JavaScript icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Node.js.svg" alt="Node.js icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/NPM.svg" alt="NPM icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/PostgresSQL.svg" alt="PostgresSQL icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/Python.svg" alt="Python icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/React.svg" alt="React icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/SQLAlchemy.svg" alt="SQLAlchemy icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/TypeScript.svg" alt="TypeScript icon"></img>
-//                             <img className="icon col-1" src="src/images/icons/VSCode.svg" alt="VSCode icon"></img>
-//                     </div>
-//                 </div>
-//             </div>
-//             <h1 className="text-success mt-2 mb-3">Featured Work</h1>
-//             <div className="row">
-//                 {projectsInfo.map(p => (
-//                     <div className="col-sm-6 mb-3" key={p.title}>
-//                         <ProjectCard
-//                             title={p.title}
-//                             description={p.description}
-//                             tech={p.tech}
-//                             github={p.github}
-//                             demo={p.demo}
-//                             img={p.img}
-//                         />
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
 
 function Projects() {
     return (
