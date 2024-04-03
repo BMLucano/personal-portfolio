@@ -7,15 +7,15 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.js'],
   },
-  build: {
-    assetsInlineLimit: 0,
-    rollupOptions: {
-      input: 'src/main.js',
-      output: {
-        dir: 'dist',
-        entryFileNames: '[name].[hash].js',
-        assetFileNames: '[name].[hash][extname]',
-      },
-    },
-  },
+  // build: {
+  //   assetsInlineLimit: 0,
+  //   rollupOptions: {
+  //     input: 'src/main.js',
+  //     output: {
+  //       dir: 'dist',
+  //       entryFileNames: '[name].[hash].js',
+  //       assetFileNames: '[name].[hash][extname]',
+  //     },
+  //   },
+  // },
 });
