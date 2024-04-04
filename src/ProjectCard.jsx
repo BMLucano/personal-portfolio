@@ -12,8 +12,8 @@ function ProjectCard({title, description, tech, demo, github, img}){
                 <p className="card-text">{description}</p>
                 <small className="card-text text-success"><b><i>{tech}</i></b></small>
                 <div className="card-footer">
-                    <a href={github} className="btn btn-light">View on Github</a>
-                    <a href={demo} className="btn btn-dark">Live Demo</a>
+                    <a href={github} className="btn btn-light" target="_blank">View on Github</a>
+                    <a href={demo} className="btn btn-dark" target="_blank">Live Demo</a>
                 </div>
             </div>
         </div>

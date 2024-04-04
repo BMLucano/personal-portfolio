@@ -1,5 +1,6 @@
 import portrait from "./images/portrait.jpeg"
 import "./About.css"
+import resume from "./assets/Brandie_Lucano_resume.pdf"
 
 /**About: displays photo and about me section */
 
@@ -17,7 +18,7 @@ function About() {
             </div>
             <div className="row mt-3">
                 <div className="col text-center">
-                    <a className="btn btn-warning" href="src/assets/Brandie_Lucano_resume.pdf" download>
+                    <a className="btn btn-warning" href={resume} download>
                         <i className="bi bi-download"></i> Download Resume
                     </a>
                 </div>
